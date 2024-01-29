@@ -1,14 +1,50 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import TinderCard from 'react-tinder-card';
 import './TinderCards.css';
 
-p
-  
-
+function TinderCards() {
+  const [cats, setCats] = useState([
+    {
+      name: "Sphynx Cat",
+      url: "https://cats.com/wp-content/uploads/2020/10/Cat-of-breed-the-Canadian-Sphynx-768x576.jpg",
+    },
+    {
+      name: "Persian Cat",
+      url: "https://cats.com/wp-content/uploads/2020/10/Show-champion-red-with-white-Persian-768x512.jpg",
+    },
+    {
+      name: "Siamese Cat",
+      url: "https://cats.com/wp-content/uploads/2020/10/Oriental-siamese-cat-768x384.jpg",
+    },
+    {
+      name: "Maine Coone Cat",
+      url: "https://cats.com/wp-content/uploads/2020/10/Beautiful-Red-Maine-Coon-768x512.jpg",
+    },
+    {
+      name: "Bengal Cat",
+      url: "https://cats.com/wp-content/uploads/2020/10/Bengal-cat-like-a-leopard-sneaks-768x384.jpg",
+    },
+    {
+      name: "Bengal Cat",
+      url: "https://cats.com/wp-content/uploads/2020/10/Bengal-cat-like-a-leopard-sneaks-768x384.jpg",
+    },
+    {
+      name: "Ragdoll Cat",
+      url: "https://cats.com/wp-content/uploads/2020/10/Bengal-cat-like-a-leopard-sneaks-768x384.jpg",
+    },
+    {
+      name: "Ragdoll Cat",
+      url: "https://cats.com/wp-content/uploads/2020/10/Bengal-cat-like-a-leopard-sneaks-768x384.jpg",
+    },
+    
+    
+    
+  ]);
 
   const swiped = (direction, nameToDelete) => {
-    console.log('removing: ' + nameToDelete);
-    // setLastDirection(direction);
+    console.log('Removing: ' + nameToDelete);
+    //setLastDirection 
+    (direction);
   };
 
   const outOfFrame = (name) => {
@@ -16,7 +52,8 @@ p
   };
 
   return (
-    <div className="tinderCards_Container">
+    
+    <div className="tinderCards__cardContainer">
       {cats.map((cat) => (
         <TinderCard
           className="swipe"
@@ -32,7 +69,6 @@ p
             <h3>{cat.name}</h3>
             {/* Additional card content can be added here */}
           </div>
-          
         </TinderCard>
       ))}
     </div>
