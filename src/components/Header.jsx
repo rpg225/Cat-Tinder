@@ -13,7 +13,7 @@ function Header() {
             <PersonIcon>
             </PersonIcon>
         </IconButton>
-        <img className='header_logo' src="images/heart-cat.png" alt="" />
+        <img className='header_logo' src="images/cat-tinder-logo.svg" alt="" />
       <IconButton>
         <ForumIcon className='header_icon' />
       </IconButton>

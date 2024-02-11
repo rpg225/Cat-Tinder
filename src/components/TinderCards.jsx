@@ -29,7 +29,7 @@ function TinderCards() {
       url: "https://cats.com/wp-content/uploads/2020/10/Ragdoll-Cat-compressed-768x384.jpg",
     },
     {
-      name: "Scottis Fold Cat",
+      name: "Scottish Fold Cat",
       url: "https://cats.com/wp-content/uploads/2020/10/Scottish-Fold-Cat-Looking-in-Camera-768x384.jpg",
     },
     
